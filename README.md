@@ -73,11 +73,20 @@ To resolve this issue:
 
 Shruti Balasa 
                             
+## MODIFIED Installing without sail
 
-
-                            
-
-Check out my other courses on [LinkedIn Learning](https://www.linkedin.com/learning/instructors/shruti-balasa).
-
-[lil-course-url]: https://www.linkedin.com/learning/advanced-laravel-22373805?dApp=59033956&leis=LAA
-[lil-thumbnail-url]: https://media.licdn.com/dms/image/D560DAQFlZrRMt3ahvA/learning-public-crop_288_512/0/1686070664741?e=2147483647&v=beta&t=oOWqD3uZY2p70h1YkCIJe4pTocxB-tD-exrZl9W5rPk
+- copy .zip repo
+- cd <custom-folder-renamed-wyw>
+- composer install
+- cp .env.example .env
+- Create a new mysql database
+- edit .env with name of new database
+- php artisan key:generate
+- php artisan migrate
+- npm install
+- npm audit fix (if necessary)
+- npm run build
+- php artisan serve ( to launch project locally)
+- register 3 new users using /register
+- edit database user table to assign to 3 new user: member, instructor, admin
+- and finally run and test project
